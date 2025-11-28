@@ -1,0 +1,23 @@
+{
+  "name": "@imprun/context",
+  "version": "1.0.0",
+  "description": "Shared development context for imprun organization projects",
+  "scripts": {
+    "install": "node install.js",
+    "postinstall": "node install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imprun/.context.git"
+  },
+  "keywords": [
+    "context",
+    "epic",
+    "story",
+    "claude-code",
+    "mermaid",
+    "serena-mcp"
+  ],
+  "author": "Imprun Organization",
+  "license": "MIT"
+}
