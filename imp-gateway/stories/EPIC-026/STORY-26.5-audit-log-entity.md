@@ -12,6 +12,7 @@
 | **상태** | 🔲 미시작 |
 | **담당** | Frontend |
 | **의존성** | Story 26.4 (Backend API) |
+| **GitHub Issue** | [#28](https://github.com/imprun/imp-gateway/issues/28) |
 
 ## 목표
 

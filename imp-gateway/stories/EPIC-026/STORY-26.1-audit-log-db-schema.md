@@ -11,6 +11,7 @@
 | **우선순위** | P2 |
 | **상태** | 🔲 미시작 |
 | **담당** | Backend |
+| **GitHub Issue** | [#24](https://github.com/imprun/imp-gateway/issues/24) |
 
 ## 목표
 
