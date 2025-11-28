@@ -10,6 +10,7 @@
 | **예상 기간** | 1주 |
 | **상태** | ✅ 완료 |
 | **의존성** | EPIC-012 (포털 레이아웃) |
+| **GitHub Issue** | [#6](https://github.com/imprun/imp-gateway/issues/6) |
 
 ## 목표
 

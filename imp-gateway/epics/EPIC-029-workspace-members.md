@@ -10,6 +10,7 @@
 | **예상 기간** | 1.5주 |
 | **상태** | ✅ 완료 |
 | **의존성** | EPIC-011 (인증) |
+| **GitHub Issue** | [#22](https://github.com/imprun/imp-gateway/issues/22) |
 
 ## 용어 정의
 

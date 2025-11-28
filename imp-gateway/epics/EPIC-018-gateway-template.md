@@ -10,6 +10,7 @@
 | **예상 기간** | 1주 |
 | **상태** | ✅ 완료 |
 | **의존성** | 없음 |
+| **GitHub Issue** | [#11](https://github.com/imprun/imp-gateway/issues/11) |
 
 ## 목표
 

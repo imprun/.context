@@ -10,6 +10,7 @@
 | **예상 기간** | 1주 |
 | **상태** | ✅ 완료 |
 | **의존성** | EPIC-013 (Cluster 관리) |
+| **GitHub Issue** | [#7](https://github.com/imprun/imp-gateway/issues/7) |
 
 ## 목표
 

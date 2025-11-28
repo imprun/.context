@@ -10,6 +10,7 @@
 | **예상 기간** | 2주 |
 | **상태** | ✅ 완료 |
 | **의존성** | EPIC-016 (API Service) |
+| **GitHub Issue** | [#13](https://github.com/imprun/imp-gateway/issues/13) |
 
 > ⚠️ **구현 순서 참고**: EPIC-016(API Service)과 본 EPIC(Route/Backend/Policy)는 밀접하게 연관되어 있습니다.
 > EPIC-016에서 API Service 상세 페이지를 구현할 때 Routes/Backends/Policies 목록을 읽기 전용으로 표시하고,

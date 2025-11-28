@@ -10,6 +10,7 @@
 | **예상 기간** | 1.5주 |
 | **상태** | 🔲 미시작 |
 | **의존성** | EPIC-016 (API Service 관리) |
+| **GitHub Issue** | [#10](https://github.com/imprun/imp-gateway/issues/10) |
 
 ## 목표
 

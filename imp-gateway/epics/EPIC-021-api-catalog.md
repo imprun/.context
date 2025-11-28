@@ -10,6 +10,7 @@
 | **예상 기간** | 1주 |
 | **상태** | 🔲 미시작 |
 | **의존성** | EPIC-019 (배포된 Product 필요) |
+| **GitHub Issue** | [#14](https://github.com/imprun/imp-gateway/issues/14) |
 
 ## 목표
 

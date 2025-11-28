@@ -10,6 +10,7 @@
 | **예상 기간** | 1주 |
 | **상태** | ✅ 완료 |
 | **의존성** | EPIC-010 (프로젝트 기반), EPIC-011 (인증) |
+| **GitHub Issue** | [#5](https://github.com/imprun/imp-gateway/issues/5) |
 
 ## 목표
 

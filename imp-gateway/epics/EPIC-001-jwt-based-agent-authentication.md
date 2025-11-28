@@ -1,6 +1,6 @@
 # EP-001: JWT 토큰 기반 Agent 인증 시스템
 
-* Issue: TBD
+* Issue: [#2](https://github.com/imprun/imp-gateway/issues/2)
 
 ## Background
 

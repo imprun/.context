@@ -10,6 +10,7 @@
 | **예상 기간** | 2주 |
 | **상태** | 🔲 미시작 |
 | **의존성** | EPIC-013 (Cluster), EPIC-014 (Agent), EPIC-017 (API Service) |
+| **GitHub Issue** | [#19](https://github.com/imprun/imp-gateway/issues/19) |
 
 ## 목표
 
