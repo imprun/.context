@@ -12,7 +12,9 @@
 | EPIC-014 | Agent Management | 7 | - | - | - |
 | EPIC-015 | Fleet Dashboard | 4 | - | - | - |
 | EPIC-016 | API Service Management | 5 | - | - | - |
+| EPIC-017 | Product Management | 6 | - | - | ✅ 완료 |
 | EPIC-018 | Gateway Template | 5 | - | - | - |
+| EPIC-019 | ProductPublish | 7 | - | - | ✅ 완료 |
 | EPIC-020 | Route & Policy | 10 | - | - | - |
 | EPIC-025 | Tenant & User 관리 | - | - | - | ✅ 완료 |
 | EPIC-026 | Audit Logs | 7 | - | - | ✅ 완료 |
@@ -29,6 +31,14 @@
 
 ## ✅ 최근 완료
 
+### EPIC-019: ProductPublish
+- 2025-12-01 완료 (PR #31 머지)
+- Story 19.1~19.7: Publish 엔티티, 위자드, 상세페이지, 액션, 타임라인
+
+### EPIC-017: Product Management
+- 2025-12-01 완료 (PR #31 머지)
+- Story 17.1~17.6: Product API hooks, 목록/상세 페이지, 서비스 연결, 상태관리
+
 ### EPIC-027: System Settings
 - 2024-11-29 완료 (커밋: `44a139f`)
 
@@ -41,6 +51,12 @@
 ---
 
 ## 일일 로그
+
+### 2025-12-01 (월)
+- EPIC-017: Product Management 전체 완료 (6 Stories)
+- EPIC-019: ProductPublish 전체 완료 (7 Stories)
+- PR #31 생성 및 머지
+- 버그 수정: useProductPublishes 쿼리 키 메모이제이션
 
 ### 2024-11-29 (금)
 - EPIC-025: Tenant & User 관리 구현 완료
@@ -60,4 +76,4 @@
 
 ---
 
-*마지막 업데이트: 2024-11-29*
+*마지막 업데이트: 2025-12-01*
