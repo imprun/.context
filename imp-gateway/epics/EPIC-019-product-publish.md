@@ -163,9 +163,11 @@ stateDiagram-v2
 1. Product 선택
 2. 배포할 클러스터 선택
 3. Gateway 템플릿 선택
-4. API Service 목록 선택
-5. 환경/인증 설정
-6. 배포 요청 → Agent가 실행
+4. 환경/인증 설정
+5. 배포 요청 → Agent가 실행
+
+> **Note**: API Service 선택 단계는 없습니다. Product에 연결된 모든 서비스가 자동으로 배포됩니다.
+> Product가 API 서비스를 묶는 논리적 단위이므로, 배포 시 개별 서비스를 선택할 필요가 없습니다.
 
 ---
 
@@ -193,19 +195,15 @@ sequenceDiagram
     API-->>UI: Gateway 목록
     Provider->>UI: prod-gateway 선택
 
-    Note over UI: Step 3: API Service 선택
-    UI->>API: GET /api/v1/provider/products/:id (with services)
-    API-->>UI: Product의 API Services
-    Provider->>UI: 배포할 Services 선택
-
-    Note over UI: Step 4: 환경/인증 설정
+    Note over UI: Step 3: 환경/인증 설정
     Provider->>UI: environment: prod
     Provider->>UI: auth_mode: oauth2
     Provider->>UI: visibility: public
 
-    Note over UI: Step 5: 확인
+    Note over UI: Step 4: 확인 및 배포 생성
     Provider->>UI: "배포 생성" 클릭
     UI->>API: POST /api/v1/provider/products/:id/publishes
+    Note right of UI: Product에 연결된 모든 API Services 포함
     API-->>UI: ProductPublish (status: DRAFT)
 
     Note over UI: 배포 실행
@@ -323,8 +321,8 @@ web/src/
 │   │       ├── publish-wizard.tsx
 │   │       ├── cluster-select-step.tsx
 │   │       ├── gateway-select-step.tsx
-│   │       ├── services-select-step.tsx
 │   │       └── config-step.tsx
+│   │       # Note: services-select-step 제거됨 (Product의 모든 서비스 자동 배포)
 │   ├── execute/
 │   │   └── ui/
 │   │       └── publish-button.tsx
@@ -374,11 +372,14 @@ web/src/
 |-------|------|------|----------|
 | 19.1 | Publish 엔티티 및 API 훅 구현 | 0.5일 | P0 |
 | 19.2 | Publish 목록 UI (Product 상세 내) | 1일 | P0 |
-| 19.3 | Publish 생성 위자드 - 클러스터/Gateway 선택 | 1.5일 | P0 |
-| 19.4 | Publish 생성 위자드 - API Service/설정 | 1.5일 | P0 |
+| 19.3 | Publish 생성 위자드 - 클러스터/Gateway 선택 | 1일 | P0 |
+| 19.4 | Publish 생성 위자드 - 환경/인증 설정 | 1일 | P0 |
 | 19.5 | Publish 상세 페이지 및 상태 표시 | 1일 | P0 |
 | 19.6 | Publish 실행 및 철회 기능 | 1일 | P0 |
 | 19.7 | 배포 이력 타임라인 위젯 | 0.5일 | P1 |
+
+> **변경 사항**: Story 19.4에서 "API Service 선택" 단계가 제거됨.
+> Product에 연결된 모든 서비스가 자동으로 배포되므로, 개별 서비스 선택은 불필요.
 
 ## 수용 기준
 
@@ -387,7 +388,7 @@ web/src/
 - [ ] 새 배포를 생성할 수 있다 (위자드 형태)
 - [ ] 배포 시 클러스터를 선택할 수 있다
 - [ ] 배포 시 Gateway 템플릿을 선택할 수 있다
-- [ ] 배포 시 포함할 API Service를 선택할 수 있다
+- [x] ~~배포 시 포함할 API Service를 선택할 수 있다~~ (제거됨 - Product의 모든 서비스 자동 배포)
 - [ ] 환경(dev/stage/prod)을 선택할 수 있다
 - [ ] 인증 모드를 설정할 수 있다
 - [ ] DRAFT 상태의 배포를 실행(Publish)할 수 있다
